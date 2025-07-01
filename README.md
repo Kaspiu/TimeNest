@@ -5,10 +5,10 @@ TimeNest allows users to personalize their focus and break session lengths to su
 ## Features
 
 - **Fully Customizable Sessions**
-  Choose your focus session between 5 and 60 minutes, and your break session between 5 and 30 minutes.
+Choose your focus session between 5 and 60 minutes, and your break session between 5 and 30 minutes.
 
 - **Clean & Minimal UI**
-  Inspired by calming, nature background to help you stay relaxed and focused.
+Inspired by calming, nature background to help you stay relaxed and focused.
 
 ## Visit Website
 
