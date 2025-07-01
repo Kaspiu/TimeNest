@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- External Fonts & Icons -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/x-icon" href="images/logo.png" />
+    <title>TimeNest</title>
+  </head>
+  <body>
+    <!-- ============ MAIN APPLICATION ============ -->
+    <main>
+      <!-- Navigation Header -->
+      <header>
+        <nav>
+          <h1>TimeNest</h1>
+          <a href="https://github.com/Kaspiu" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </nav>
+      </header>
+
+      <div class="container">
+        <!-- ============ TIMER INTERFACE ============ -->
+        <div class="timerArea" id="timerArea">
+          <!-- Timer Mode Display -->
+          <div class="timerTitle">
+            <i id="modeIcon" class="fa-solid fa-eye"></i>
+            <p class="mode" id="mode">FOCUS</p>
+          </div>
+
+          <!-- Main Timer Display -->
+          <p class="timer" id="timer">25:00</p>
+
+          <!-- Progress Bar -->
+          <div class="progressBarArea">
+            <div class="progressBar" id="progressBar"></div>
+          </div>
+
+          <!-- Control Buttons -->
+          <div class="buttonArea">
+            <button id="reset" onclick="resetTimer()">
+              <i class="fa-solid fa-arrow-rotate-left"></i>
+            </button>
+            <button id="start" onclick="startTimer()">START</button>
+            <button id="pause" onclick="pauseTimer()">PAUSE</button>
+            <button id="settings" onclick="openSettings()">
+              <i class="fa-solid fa-gear"></i>
+            </button>
+            <button id="close" onclick="closeSettings()">
+              <i class="fa-solid fa-xmark-large"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- ============ SETTINGS PANEL ============ -->
+        <div class="settingsArea" id="settingsArea">
+          <p class="title">SETTINGS</p>
+
+          <!-- Focus Session Controls -->
+          <div class="controlArea">
+            <p>Focus Session</p>
+            <div class="sessionControls">
+              <button onclick="focusDeValue()">
+                <i class="fa-solid fa-minus"></i>
+              </button>
+              <div class="valueDisplay" id="focusValueDisplay">25</div>
+              <button onclick="focusInValue()">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Break Session Controls -->
+          <div class="controlArea">
+            <p>Break Session</p>
+            <div class="sessionControls">
+              <button onclick="breakDeValue()">
+                <i class="fa-solid fa-minus"></i>
+              </button>
+              <div class="valueDisplay" id="breakValueDisplay">5</div>
+              <button onclick="breakInValue()">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
