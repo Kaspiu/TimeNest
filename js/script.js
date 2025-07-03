@@ -11,6 +11,7 @@ const elements = {
   progressBar: document.getElementById("progressBar"),
   mode: document.getElementById("mode"),
   modeIcon: document.getElementById("modeIcon"),
+  loader: document.getElementById("loaderContainer"),
 };
 
 // Constants
@@ -200,3 +201,8 @@ function switchTimerMode() {
   elements.mode.textContent = isFocusMode ? MODES.BREAK : MODES.FOCUS;
   elements.modeIcon.className = isFocusMode ? ICONS.BREAK : ICONS.FOCUS;
 }
+
+// Hide loader when page is fully loaded
+window.addEventListener("load", () => {
+  elements.loader.style.display = "none";
+});
