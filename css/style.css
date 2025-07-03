@@ -51,6 +51,56 @@ nav a {
   font-size: 1.5rem;
 }
 
+/* Loader Container */
+#loaderContainer {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: #080808;
+}
+
+#loaderContainer .loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5rem;
+  height: 5rem;
+  background: linear-gradient(
+      #080808 calc(1 * 100% / 6),
+      white 0 calc(3 * 100% / 6),
+      #080808 0
+    ),
+    linear-gradient(
+      #080808 calc(2 * 100% / 6),
+      white 0 calc(4 * 100% / 6),
+      #080808 0
+    ),
+    linear-gradient(
+      #080808 calc(3 * 100% / 6),
+      white 0 calc(5 * 100% / 6),
+      #080808 0
+    );
+  background-size: 1.25rem 400%;
+  background-repeat: no-repeat;
+  animation: matrix 1s infinite linear;
+}
+
+@keyframes matrix {
+  0% {
+    background-position: 0% 100%, 50% 100%, 100% 100%;
+  }
+
+  100% {
+    background-position: 0% 0%, 50% 0%, 100% 0%;
+  }
+}
+
 /* Main Container */
 .container {
   display: flex;
