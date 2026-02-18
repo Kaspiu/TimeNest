@@ -12,8 +12,8 @@ TimeNest allows users to personalize their focus and break session lengths to su
 
 ## Visit Website
 
-- [TimeNest](https://kaspiu.github.io/TimeNest/)
+[TimeNest](https://kaspiu.github.io/TimeNest/)
 
-## Authors
+## Author
 
-- [@Kaspiu](https://github.com/Kaspiu)
+[@Kaspiu](https://github.com/Kaspiu)
